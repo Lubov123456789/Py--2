@@ -38,10 +38,10 @@ class Library:
         else:
             return len(self.books)+1
 
-    def get_index_by_book_id(self, sel_id: int):
-        self.sel_id = sel_id
+    def get_index_by_book_id(self, self_id: int):
+        self.self_id = self_id
         for book in self.books:
-            if book.id_ == sel_id:
+            if book.id_ == self_id:
                 return self.books.index(book)
             else:
                 raise ValueError("Книги с запрашиваемым id не существует")
